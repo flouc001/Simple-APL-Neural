@@ -75,8 +75,8 @@
           output_layer←layers[≢layers]
           :For iteration :In ⍳training_iterations
               :For example :In examples
-                  inputs←⊃example[1]
-                  targets←⊃example[2]
+                  inputs←,⊃example[1]
+                  targets←,⊃example[2]
                   outputs←process inputs
                   :For i :In ⍳≢output_layer.neurons
                       neuron←output_layer.neurons[i]
@@ -84,7 +84,7 @@
                       neuron.errors,←neuron.error
                       neuron.delta←neuron.last_output×(1-neuron.last_output)×neuron.error
                   :EndFor
-                  :For l :In ⌽⍳¯1+≢layers
+                  :For l :In ⌽1+⍳¯2+≢layers
                       :For j :In ≢layers[l].neurons
                           neuronJ←layers[l].neurons[j]
                           neuronJ.error←+/(j∘{⍵.weights[⍺]×⍵.delta}¨layers[l+1].neurons)
