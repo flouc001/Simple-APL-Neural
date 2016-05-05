@@ -21,11 +21,11 @@
     
     ∇ XOR;network
       network←⎕NEW #.Neural.Network
-      network.addLayer 200 2
+      network.addLayer 5 2
       network.addLayer 4 ⍬
       network.addLayer 1 ⍬
      
       network.train(((0 0)0)((0 1)1)((1 0)1)((1 1)0))
-      ∘ ⍝⍝⍝ ∘
+      network.process(0 0)
     ∇
 :EndNamespace
