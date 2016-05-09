@@ -1,4 +1,3 @@
 Target #
-Load ./src/neural.dyalog
-Load ./src/math.dyalog
-Load ./src/tests.dyalog
+Load ./src/*
+Load ./tests/tests.dyalog
