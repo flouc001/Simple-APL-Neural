@@ -9,3 +9,5 @@ Just double click the .dyapp file and run one of the functions under the '#.Test
 - Improve performance.
 - Re-write in a more 'APL' way.
 - Add comments! ⍝
+- Write a clear perceptron and sigmoid neuron implementation.
+- Add a handwriting example with GUI for input.
