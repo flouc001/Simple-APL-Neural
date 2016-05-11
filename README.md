@@ -11,3 +11,5 @@ Just double click the .dyapp file and run one of the functions under the '#.Test
 - Add comments! ⍝
 - Write a clear perceptron and sigmoid neuron implementation.
 - Add a handwriting example with GUI for input.
+- Create a visualization of the learning process.
+- Create benchmarking functions.
